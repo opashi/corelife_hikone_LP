@@ -96,12 +96,6 @@
     linear-gradient(120deg, #fafbf5, #f1f5eb);
 }
 
-.symptom-detail-page .symptom-hero-copy {
-  max-width: 530px;
-  position: relative;
-  z-index: 1;
-}
-
 .symptom-detail-page .symptom-hero-copy .eyebrow {
   margin-bottom: 17px;
 }
