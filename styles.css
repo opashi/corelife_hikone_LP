@@ -11,6 +11,7 @@
   --gold: #c5b477;
   --serif: "Noto Serif JP", "Yu Mincho", YuMincho, serif;
   --sans: "Noto Sans JP", "Yu Gothic", YuGothic, sans-serif;
+  --cav: "Caveat", cursive;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +49,7 @@ h1, h2, h3, p { margin-top: 0; }
 .hero-visual { min-height: 650px; position: relative; overflow: hidden; }
 .hero-visual::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 23%; z-index: 1; background: linear-gradient(90deg, #f8f8f1, rgba(248,248,241,0)); }
 .hero-visual > img { height: 100%; min-height: 650px; object-fit: cover; object-position: 54% 42%; }
-.hero-stamp { position: absolute; right: 7%; bottom: 12%; color: white; text-align: center; font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.5; text-shadow: 0 2px 15px rgba(21, 45, 14, .3); transform: rotate(-7deg); }
+.hero-stamp { position: absolute; right: 7%; bottom: 12%; color: white; text-align: center; font-family: var(--cav); font-weight: 400; font-size: 28px; font-style: italic; line-height: 1.5; text-shadow: 0px 2px 15px rgba(21, 45, 14, .3); transform: rotate(-7deg); }
 .hero-stamp span { font-size: 12px; letter-spacing: .2em; }
 .hero-caption { position: absolute; right: 25px; bottom: 18px; margin: 0; color: #fff; font-size: 10px; letter-spacing: .1em; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
 .hero-scroll { position: absolute; left: 50%; bottom: 19px; z-index: 2; display: grid; justify-items: center; gap: 6px; color: #798369; font-size: 8px; letter-spacing: .18em; }
@@ -123,6 +124,21 @@ h1, h2, h3, p { margin-top: 0; }
 .map-frame { min-height: 355px; overflow: hidden; border: 8px solid #f1f3e9; }
 .map-frame iframe { width: 100%; height: 100%; min-height: 339px; border: 0; filter: saturate(.78); }
 
+.symptom-section { padding-top: 93px; padding-bottom: 108px; background-color: #f1f5eb; background-image: radial-gradient(ellipse at 0 100%, rgba(186, 203, 165, .2), transparent 35%), radial-gradient(ellipse at 100% 0, rgba(186, 203, 165, .2), transparent 33%); }
+.section-heading { max-width: 700px; margin: 0 auto 43px; text-align: center; }
+.section-heading .eyebrow { margin-bottom: 8px; }
+.section-heading h2 { margin-bottom: 9px; font-family: var(--serif); font-size: clamp(29px, 3vw, 37px); }
+.section-heading > p:last-child { margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 2; }
+.symptom-card { overflow: hidden; border: 1px solid rgba(74, 105, 55, .08); border-radius: 10px; background: var(--paper); box-shadow: 0 8px 22px rgba(58, 74, 48, .05); transition: transform .25s ease, box-shadow .25s ease; padding: 20px; margin-bottom: 20px; }
+.card-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.card-heading img { width: 60px; height: 60px; }
+.card-heading h3 { margin: 0; font-family: var(--serif); font-size: 18px; color: #4b633f; }
+.symptom-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+.symptom-item { text-align: center; }
+.symptom-item img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; }
+.symptom-item h3 { margin-bottom: 4px; font-family: var(--serif); font-size: 14px; color: #4b633f; }
+.symptom-item img:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(58, 74, 48, .1); }
+
 .final-cta { padding: 76px 24px 82px; position: relative; overflow: hidden; background: linear-gradient(115deg, #4f713e, #6d8e50); color: white; text-align: center; }
 .final-cta::before, .final-cta::after { content: ""; position: absolute; width: 280px; height: 280px; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; }
 .final-cta::before { left: -100px; top: -130px; }
@@ -140,6 +156,7 @@ h1, h2, h3, p { margin-top: 0; }
 .site-footer p { margin: 0; color: #7c8077; font-size: 10px; }
 .site-footer p a { color: var(--green); }
 .site-footer > small { color: #a1a396; font-size: 9px; letter-spacing: .05em; }
+.footer-main-link { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
 .mobile-contact { display: none; }
 
 @media (max-width: 1050px) {
@@ -184,7 +201,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-visual { min-height: 0; height: min(108vw, 440px); }
   .hero-visual > img { min-height: 0; object-position: 53% 38%; }
   .hero-visual::before { inset: 0 0 auto; width: auto; height: 18%; background: linear-gradient(180deg, #f7f7ef, transparent); }
-  .hero-stamp { right: 7%; bottom: 12%; font-size: 18px; }
+  .hero-stamp { right: 7%; bottom: 12%; font-size: 24px; }
   .hero-stamp span { font-size: 10px; }
   .hero-caption { right: 14px; bottom: 12px; font-size: 8px; }
   .hero-scroll { display: none; }
@@ -229,6 +246,10 @@ h1, h2, h3, p { margin-top: 0; }
   .access-button { width: 100%; margin-top: 18px; }
   .map-frame { min-height: 280px; border-width: 5px; }
   .map-frame iframe { min-height: 270px; }
+  .symptom-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .card-heading img { width: 40px; height: 40px; }
+  .card-heading h3 { margin: 0; font-size: 16px; color: #4b633f; }
+  .symptom-item h3 { font-size: 11px; }
   .final-cta { padding: 58px 18px 64px; }
   .final-cta h2 { font-size: 25px; }
   .final-cta > p:not(.eyebrow) { font-size: 11px; }
