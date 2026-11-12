@@ -448,7 +448,6 @@ h1, h2, h3, p {
   margin-bottom: 17px;
   color: #6c7167;
   font-size: 12px;
-  line-height: 2.25;
 }
 
 .symptom-detail-page .symptom-about-copy p:last-child {
@@ -527,7 +526,6 @@ h1, h2, h3, p {
   margin: 0;
   color: #777b72;
   font-size: 11px;
-  line-height: 2;
 }
 
 
@@ -575,7 +573,6 @@ h1, h2, h3, p {
   margin-bottom: 16px;
   color: #6c7167;
   font-size: 12px;
-  line-height: 2.2;
 }
 
 .symptom-detail-page .body-structure-copy p:last-child {
@@ -648,7 +645,6 @@ h1, h2, h3, p {
   margin: 0;
   color: #777b72;
   font-size: 11px;
-  line-height: 2;
 }
 
 
@@ -1001,7 +997,6 @@ h1, h2, h3, p {
   .symptom-detail-page .symptom-about-copy p {
     margin-bottom: 12px;
     font-size: 11px;
-    line-height: 2.1;
   }
 
 
