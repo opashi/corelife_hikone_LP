@@ -46,7 +46,7 @@ h1, h2, h3, p { margin-top: 0; }
 .button-primary { color: #fff; background: var(--green); box-shadow: 0 8px 20px rgba(65, 96, 48, .15); }
 .button-primary span, .button-light .cta-arrow { font-size: 18px; line-height: 1; }
 .hero-note { margin: 10px 0 0 18px; color: var(--muted); font-size: 10px; letter-spacing: .06em; }
-.hero-visual { min-height: 650px; position: relative; overflow: hidden; }
+.hero-visual { min-height: 650px; height: 80vh; position: relative; overflow: hidden; }
 .hero-visual::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 23%; z-index: 1; background: linear-gradient(90deg, #f8f8f1, rgba(248,248,241,0)); }
 .hero-visual > img { height: 100%; min-height: 650px; object-fit: cover; object-position: 54% 42%; }
 .hero-stamp { position: absolute; right: 7%; bottom: 12%; color: white; text-align: center; font-family: var(--cav); font-weight: 400; font-size: 28px; font-style: italic; line-height: 1.5; text-shadow: 0px 2px 15px rgba(21, 45, 14, .3); transform: rotate(-7deg); }

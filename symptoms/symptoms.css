@@ -146,6 +146,7 @@
 
 .symptom-detail-page .symptom-hero-visual {
   min-width: 650px;
+  height: 70vh;
   position: relative;
   overflow: hidden;
 }
